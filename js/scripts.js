@@ -46,6 +46,18 @@ $(document).ready(function(){
 
     var name = $(".name").val();
     var size = $(".size").val();
-    
-  })
-}
+
+    var toppings = 0;
+    for (i=0; i<document.order.topping.length; i++){
+      if (document.order.topping[i].checked==true){
+        toppings+=1;
+      };
+    };
+
+    var newPie = new Pie(name, size, toppings);
+
+    $("#total").text("$" + newPie.price().toFixed(2));
+    $("#name").text(name);
+    $("#show-price").show();
+  });
+});
