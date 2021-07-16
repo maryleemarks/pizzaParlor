@@ -11,9 +11,26 @@
     <div class="container">
       <h1>Welcome to Mary's Pizza Parlor!</h1>
       <h2>Choose your pizza size and toppings below</h2>
-      <h3>*All pizzas will have dairy cheese unless the Vegan Cheese option is selected</h3>
+      <h3>*All pizzas will have dairy cheese unless the Vegan Cheese option is selected ($1 upcharge for vegan cheese)</h3>
 
-      
+      <form id="order" name="order">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" type="text">
+        </div>
+        <div class="form-group">
+          <label for="size">Choose A Size</label>
+          <select name="size" id="size">
+            <option value="small">Small ($15)</option>
+            <option value="medium">Medium ($20)</option>
+            <option value="large">Large ($25)</option>
+            <option value="extraLarge">Extra Large ($30)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="toppings">Choose Your Toppings ($1 per topping)</label>
+        </div>
+      </form>
     </div>
   </body>
 </html>
