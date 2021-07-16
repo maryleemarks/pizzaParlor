@@ -40,3 +40,12 @@ Pie.prototype.price = function() {
 }
 
 // UI Logic
+$(document).ready(function(){
+  $("form#order").submit(function(event){
+    event.preventDefault();
+
+    var name = $(".name").val();
+    var size = $(".size").val();
+    
+  })
+}
