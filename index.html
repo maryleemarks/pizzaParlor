@@ -16,7 +16,7 @@
       <form id="order" name="order">
         <div class="form-group">
           <label for="name">Name</label>
-          <input id="name" type="text">
+          <input required class="name" type="text">
         </div>
         <div class="form-group">
           <label for="size">Choose A Size</label>
@@ -39,12 +39,14 @@
           <label><input id="toppings" type="checkbox" value="">Mushrooms</label>
         </div>
 
-        <button type="submit" class="btn">Submit</button>
+        <button type="submit" class="btn">Submit Order</button>
       </form>
+
+      <div id="show-price">
+        <h2><span id="name"></span>, your order will cost <span id="total"></span>.</h2>
+      </div>
     </div>
 
-    <div id="show-price">
-      <h2><span id="name"></span>, your order will cost<span id="total"></span>.</h2>
-    </div>
+    
   </body>
 </html>
