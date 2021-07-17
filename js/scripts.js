@@ -1,37 +1,37 @@
 // Business Logic
 function Pie(name, size, toppings) {
-  this.name = name;
-  this.size = size;
-  this.toppings = toppings;
+  this.pname = name;
+  this.psize = size;
+  this.ptoppings = toppings;
 }
 
 Pie.prototype.priceCal = function() {
-  var price = 0;
-    if (this.size === "Extra Large") {
+  let price = 0;
+    if (this.psize === "extraLarge") {
       this.price = 30;
-    } else if (this.size === "Large") {
+    } else if (this.psize === "large") {
       this.price = 25;
-    } else if (this.size === "Medium") {
+    } else if (this.psize === "medium") {
       this.price = 20;
-    } else {
-      this.price = 15;
+    } else  {
+      this.price = 15; 
     }   
     
-    if (this.toppings === 8) {
+    if (this.ptoppings === 8) {
       this.price += 8;
-    } else if (this.toppings === 7) {
+    } else if (this.ptoppings === 7) {
       this.price += 7;
-    } else if (this.toppings === 6) {
+    } else if (this.ptoppings === 6) {
       this.price += 6;  
-    } else if (this.toppings === 5) {
+    } else if (this.ptoppings === 5) {
       this.price += 5; 
-    } else if (this.toppings === 4) {
+    } else if (this.ptoppings === 4) {
       this.price += 4; 
-    } else if (this.toppings === 3) {
+    } else if (this.ptoppings === 3) {
       this.price += 3;
-    } else if (this.toppings === 2) {
+    } else if (this.ptoppings === 2) {
       this.price += 2;
-    } else if (this.toppings === 1) {
+    } else if (this.ptoppings === 1) {
       this.price += 1;
     } else {
     } 
