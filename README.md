@@ -14,7 +14,7 @@
 
 ## Description
 
-This webpage lets you select your custom pizza and tells you much it will cost by using javascript constructors and prototypes.
+This webpage lets you select your custom pizza and tells you much it will cost by using javaScript constructors and prototypes.
 
 ## Setup/Installation Requirements
 
@@ -30,7 +30,6 @@ This webpage lets you select your custom pizza and tells you much it will cost b
 ## Known Bugs
 
 * Does not let you enter in more than one order
-* 
 
 ## License
 
@@ -38,24 +37,23 @@ MIT
 
 ## Specs
 
-Describe: beepBoop()
+Describe: Pie()
 
-Test: It should return 0 if the number 0 is inputted
-Code: beepBoop(0)
-Expected Output: [0]
+Test: It should return a name when text is entered into the "Name" box
+Code: let name = "Bob"
+Expected Output: Bob
 
-Test: It should return "Beep!" for numbers that contain 1
-Code: beepBoop(1)
-Expected Output: [0, Beep!]
+Test: It should create a new pizza object with a name, size and toppings
+Code: let pie = ("Bob", "Medium", "Pepperoni")
+Expected Output: Bob, Medium, Pepperoni
 
-Test: It should return "Boop!" for numbers that contain 2
-Code: beepBoop(2)
-Expected Output: [0, Beep!, Boop!]
+Describe: Pie.prototype.priceCal()
 
-Test: It should return "Won't you be my neighbor?" for numbers that contain 3
-Code: beepBoop(3)
-Expected Output: [0, Beep!, Boop!, Won't you be my neighbor?]
+Test: It should set base prices for small, medium, large, and extra large
+Code: let pie = new pie ("medium")
+Expected Output: $20
 
-Test: It should return the number for any numbers not containing 1, 2, or 3
-Code beepBoop (4)
-Expected Output: [0, Beep!, Boop!, Won't you be my neighbor?, 4]
+Test: It should add 1 to the base price for each topping selected.
+Code: let pie = new pie ("medium", olives, pepperoni)
+Expected Outpu: $22
+
