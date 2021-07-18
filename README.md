@@ -14,7 +14,7 @@
 
 ## Description
 
-This webpage lets you select your custom pizza and tells you much it will cost by using javaScript constructors and prototypes.
+This webpage lets you select your custom pizza and tells you much it will cost by using JavaScript constructors and prototypes.
 
 ## Setup/Installation Requirements
 
@@ -55,5 +55,5 @@ Expected Output: $20
 
 Test: It should add 1 to the base price for each topping selected.
 Code: let pie = new pie ("medium", olives, pepperoni)
-Expected Outpu: $22
+Expected Output: $22
 
